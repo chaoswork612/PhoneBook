@@ -55,7 +55,7 @@ def format_phone_number(match_obj):
 
 def merge_and_compare_records(list_of_lists):
   phone_pattern = re.compile(
-    r"^\+?[78]?\s?\(?(\d{1,3})\)?[\s\-]?(\d{1,3})[\s\-]?(\d{1,2})[\s\-]?(\d{1,2})(?:[\s\-]?(?:\(|\s)?доб\.\s?(\d{4})(?:\))?)?$",
+    r"^\+?[78]?\s?\(?(\d{1,3})\)?[\s\-]?(\d{1,3})[\s\-]?(\d{1,2})[\s\-]?(\d{1,2})(?:\s?\(?доб\.\s?(\d{4})\)?)?$",
     re.IGNORECASE | re.VERBOSE
   )
 
